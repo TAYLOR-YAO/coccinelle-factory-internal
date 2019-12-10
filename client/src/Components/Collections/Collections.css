@@ -1,0 +1,12 @@
+.collection{
+    margin: 30px auto !important;
+    height: 50% !important;
+    width: 75%;
+}
+.controler{
+    width: 15%
+}
+.gallery{
+    width: 75%;
+    padding: 10px;
+}
