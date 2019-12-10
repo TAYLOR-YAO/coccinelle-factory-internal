@@ -14,8 +14,7 @@ return (
         <div style={{position: 'relative', left:"25px" , color:"#000" }}>
             <IconButton name="more_vert" id="demo-menu-lower-left" />
             <Menu target="demo-menu-lower-left" valign="bottom" ripple>
-                <MenuItem>Some Action</MenuItem>
-                <MenuItem>Another Action</MenuItem>
+                <MenuItem>profile</MenuItem>
                 {user.name ? <MenuItem onClick={this.onLogoutClick}>Logout</MenuItem> : <MenuItem><a href="/login" style={{color:"#000"}}>login</a></MenuItem>}
             </Menu>
         </div>

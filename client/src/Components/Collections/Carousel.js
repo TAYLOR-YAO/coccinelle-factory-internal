@@ -4,44 +4,25 @@ import { Carousel } from "react-responsive-carousel";
 export default () => (
   <Carousel autoPlay>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt="design" />
+      <img src="http://www.superedo.net/wallpapers/wallpapers/Insects/Coccinelle/coccinelle_013.jpg" alt="design" />
       <p className="legend">Legend 1<span style={{margin: 10}}><button> Commander</button></span></p>
     </div>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" alt="design" />
-      <p className="legend">Legend 2</p>
+      <img src="http://fabfashionfix.com/wp-content/uploads/2014/09/BLU_0026.jpg" alt="design" />
+      <p className="legend"><button> Commander</button></p>
     </div>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" alt="design" />
-      <p className="legend">Legend 3</p>
+      <img src="http://cocoadiaries.com/wp-content/uploads/2017/06/FUSE-ODG-1-of-1.jpg" alt="design" />
+      <p className="legend"><button> Commander</button></p>
     </div>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" alt="design" />
-      <p className="legend">Legend 4</p>
-    </div>
-    <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" alt="design" />
-      <p className="legend">Legend 5</p>
+      <img src="https://celebmafia.com/wp-content/uploads/2018/02/kaia-gerber-supermodel-runway-walk-max-mara-fashion-show-in-milan-02-22-2018-2.jpg" style={{width:"640", height:"480"}} alt="design" />
+      <p className="legend"><button> Commander</button></p>
     </div>
     <div>
       <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" alt="design"  />
-      <p className="legend">Legend 6</p>
+      <p className="legend"><button> Commander</button></p>
     </div>
-    <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" alt="design"  />
-      <p className="legend">Legend 7</p>
-    </div>
-    <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" alt="design" />
-      <p className="legend">Legend 8</p>
-    </div>
-    <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-9.jpg" alt="design" />
-      <p className="legend">Legend 9</p>
-    </div>
-    <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-10.jpg" alt="design" />
-      <p className="legend">Legend 10</p>
-    </div>
+    
   </Carousel>
 );

@@ -10,3 +10,10 @@
     width: 75%;
     padding: 10px;
 }
+
+/* ------------------------- */
+
+#root > div > div > div > div.mdl-layout__content > div.collection > div > div.mdl-cell.mdl-cell--9-col > div > div.carousel.carousel-slider > div > ul{
+ height: 480px;
+}
+
