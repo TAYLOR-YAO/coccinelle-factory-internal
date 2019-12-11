@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import axios from "axios";
 import {Grid, Cell, Card, CardActions, CardTitle, CardText, CardMenu, Tabs, Tab, Button} from "react-mdl";
 import "./Commande.css";
-import EdiText from 'react-editext'
+import EdiText from 'react-editext';
 import DatePicker, { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ja from "date-fns/locale/fr";
@@ -584,15 +584,11 @@ handleDateDeLivraison = date =>{
                 </Cell>
           
                 <Cell col={8}>
-                    <strong style={{textAlign:"center"}}>
-                        <h3>Mesures</h3>
-                        <hr/>
-                    </strong>
                     <div className="category-tabs">
                         <Tabs activeTab = {this.state.activeTab} onChange={(tabId)=> this.setState({activeTab:tabId})} ripple>
                             <Tab style={{color:"#000" }}>Choisir Tissu</Tab>
-                            <Tab style={{color:"#000" }}>Haut</Tab>
-                            <Tab style={{color:"#000" }}>Bas</Tab>                                                  
+                            <Tab style={{color:"#000" }}>Mesure Haut</Tab>
+                            <Tab style={{color:"#000" }}>Mesure Bas</Tab>                                                  
                         </Tabs>
                         <section>
                             <Grid className="project-grid">
