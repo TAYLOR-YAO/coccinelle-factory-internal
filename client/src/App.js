@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import logo from "./Components/Images/Logos/cofa4.jpg";
+import logo from "./Components/Images/Logos/Logo-CoFa New-5.png";
 
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
@@ -17,13 +17,13 @@ class App extends Component {
   onLogoutClick = e => {
     e.preventDefault();
     console.log("Clicked !!")
-    // this.props.logoutUser();
+    this.props.logoutUser();
   };
   render(){
   return (
         <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title={<Link to="/" style={{textDecoration:"none", color:"#000"}}> <img src={logo} alt="coccinelle factory"/></Link>} scroll>
+          <Header className="header-color" title={<Link to="/" style={{textDecoration:"none", color:"#000"}}> <img src={logo} alt="coccinelle factory" style={{background:"#ffffff"}}/></Link>} scroll>
 
             <Navigation>
               <Link to="/">Acceuil</Link>
@@ -49,9 +49,9 @@ class App extends Component {
             {/* <Main/> */}
 
 {/* *************************************************************** */}
-            <div className="heading">
+            {/* <div className="heading">
               <h1>Foccinelle Factory</h1>
-            </div>
+            </div> */}
               
             <Router/>
 {/* *************************************************************** */}

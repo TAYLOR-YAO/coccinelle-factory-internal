@@ -72,6 +72,7 @@ class Commande extends Component {
 handleDateDeLivraison = date =>{
     // let formatted_date = date.getDate() + "-" + months[date.getMonth()] + "-" + date.getFullYear()
     // console.log(formatted_date)
+    // console.log(date)
     this.setState({
         dateChoisie: date,
         dateDeLivraison: date

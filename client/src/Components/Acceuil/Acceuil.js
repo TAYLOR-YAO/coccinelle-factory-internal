@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import axios from "axios";
 import {Grid, Cell} from "react-mdl";
 import { Accordion, Card, Button } from 'react-bootstrap';
-import EdiText from 'react-editext';
 import "./Acceuil.css";
 
 class Acceuil extends Component {
@@ -47,7 +46,6 @@ class Acceuil extends Component {
                 commmandes: res.data.sort(function(a,b){
                     return new Date(a.dateDeLivraison) - new Date(b.dateDeLivraison);
                 })
-
             })
         ) 
         .catch(err =>
@@ -55,13 +53,12 @@ class Acceuil extends Component {
         );
     }
 
-    onSaveDateDeLivraison = val => {this.setState({dateDeLivraison: val})}
-
     render(){
         const commmandes = this.state.commmandes
         return(
-        <div style={{width:"90%",margin:"auto"}}>
-            <h1>Acceuil</h1>
+        <div style={{width:"90%",margin:"auto", textAlign:"center"}}>
+        <br/>
+            <h1 className="heading">Ordre De Livraison</h1>
 
             {
                 commmandes.map(commmande=>{
@@ -77,17 +74,9 @@ class Acceuil extends Component {
                                 
                             </Cell>
                             <Cell col={2}>
-                                <strong>Date de Livraison</strong>
                                 <br/>
-                                <span >
-                                    <EdiText
-                                        type='text'
-                                        value={commmande.dateDeLivraison.substring(0, commmande.dateDeLivraison.length - 14)}
-                                        dateFormat="dd/MM/yyyy" 
-                                        onSave={this.onSaveDateDeLivraison}
-                                    />
-                                </span>
-                                <button style={{borderRadius:"5px"}}>Livrer</button>
+                                <strong > {`${commmande.dateDeLivraison.substring(0, commmande.dateDeLivraison.length - 14)} `} </strong>
+                                <button style={{borderRadius:"5px"}}> Livrer</button>
                             </Cell>
                         </Grid>
                         <Accordion>
@@ -98,7 +87,7 @@ class Acceuil extends Component {
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
-                                <Card.Body style={{color:"#333"}}>Hello! I'm the body</Card.Body>
+                                <Card.Body style={{color:"#333"}}>Details de la commande</Card.Body>
                                 </Accordion.Collapse>
                             </Card>
                         </Accordion>
